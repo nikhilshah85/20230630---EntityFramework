@@ -1,0 +1,54 @@
+Name :
+Describe yourself technically – experience, framework, work, task, projects etc.
+Technical Background
+What I already Know
+What I want to learn
+Expectations from the training
+Which last training u attended from me:
+
+-------------------------------
+Lab setup
+
+Visual Studio 2022 (.net core 5.0 or above)
+SQL Server 2014 or above
+SQL Server Management Studio
+github and github account
+---------------------
+u must have this installed on your machine, else you can connect to cloud lab
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

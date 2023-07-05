@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\bankingAPP_EFCore.props" />
+</Project>

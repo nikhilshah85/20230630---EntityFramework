@@ -1,0 +1,18 @@
+1. When you want to add more functionality to application, like more tables, edited tables, views etc..
+	run the Scaffold-DbContext command with -force
+2. you can have more than 2 db context in the same application
+	Yes
+	(why will u have it and when will u have, 
+	when you have tables placed in different databases or different servers)
+	you can fire the same Scaffold-DbContext 2 times or more
+
+
+
+
+Try : Add a new database context for the below connection, later add controllers and perform CRUD
+
+
+Scaffold-DbContext "Server=tcp:shoppinginstance.database.windows.net,1433;Initial Catalog=nikhil_shoppingapp;Persist Security Info=False;User ID=trainer;Password=Password@1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" -Provider Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models\EF -Force
+
+
+Tomorrow : Codefirst Approach, we write code and database would be created for us

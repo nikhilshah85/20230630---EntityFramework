@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CodeFirst_empAPP.Models.EmployeeDetails>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.empName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.empSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.empCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.empIsPermenant)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.empName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.empSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.empCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.empIsPermenant)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.empNo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.empNo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.empNo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

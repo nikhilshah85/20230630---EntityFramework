@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\empmanagement_codefirst.props" />
+</Project>

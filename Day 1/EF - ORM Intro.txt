@@ -1,0 +1,93 @@
+
+
+
+
+				So far, developers used below drivers/api to connect to databases
+					ODBC
+					OLEDB
+					JDBC (Java) 
+					ADO (.Net)
+
+		
+				ADO.net Problems
+					a. To lenghty procedure to access the data (10-12 lines of code to read a simple table)
+					b. data conversion was affecting performance for higher application (bit to bool)
+					c. support for new development/advancement in programming (DI, dependency injection)
+					d. Support for change in datasource 
+					e. This is based on Microsofts own patterns, design, architecture etc... not an open source
+
+
+			this is the problem with every framework Java, ruby, python, .net developer, C++,  etc.......
+
+
+			Thus the community (group of ppl and organizations) can ahead and created a Design Pattern  = ORM Pattern
+				Object Relational Mapping - every table, view in data source, should have a presentation (class file) in front end
+
+
+					Database        DBContext (in application)
+					Table		Class
+					Columns		Properties
+					Constraints	Constraints
+					Validataions	DataAnnotations
+					Procedure	method
+
+			When you create a new .net core application, it does not know about EF, thus we have add Nuget Packages 
+
+
+
+
+
+		First Example : Steps
+
+		a. Create a database and add a table with some sample records		
+			https://codeshare.io/0g0LXm
+		b. create a new .net core application - MVC - bankingAPP_EFCore
+		c. Install EF Core nuget packages - 4 packages - take care of version - install then in sequence (recommended)
+			Solution Explorer -> Right click project -> Manage Nuget Packages -> Browse -> Search Entity Framework Core
+				Microsoft.EntityFrameworkCore.Design
+				Microsoft.EntityFrameworkCore.Tools
+				Microsoft.EntityFrameworkCore
+				Microsoft.EntityFrameworkCore.SQlServer
+		d. create poco classes  (Link application to database) by running EFCore command - Scaffold-DbContext
+			tools -> Nuget Package Manager -> Console
+		
+			Fire the below Command
+			Scaffold-DbContext "server=vaibhav-java-training.database.windows.net;database=BankingMangementDB;integrated security=true;trust server certificate=true" -Provider Microsoft.EntityFrameworkCore.SQlServer
+				-outPutDir Models\EF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+					

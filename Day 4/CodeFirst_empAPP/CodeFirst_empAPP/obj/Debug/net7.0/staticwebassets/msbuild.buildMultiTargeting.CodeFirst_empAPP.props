@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CodeFirst_empAPP.props" />
+</Project>
